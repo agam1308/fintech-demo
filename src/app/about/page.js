@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/basePath';
 
 export default function About() {
   return (
@@ -23,7 +24,7 @@ export default function About() {
             </Col>
             <Col lg={6}>
               <Image 
-                src="/team-collaboration.jpg" 
+                src={getAssetPath("/team-collaboration.jpg")}
                 alt="Team Collaboration" 
                 width={600} 
                 height={400}
@@ -117,7 +118,7 @@ export default function About() {
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <Image 
-                src="/office-workspace.jpg" 
+                src={getAssetPath("/office-workspace.jpg")}
                 alt="Modern Office Workspace" 
                 width={600} 
                 height={400}

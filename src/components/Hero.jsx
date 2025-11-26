@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/basePath';
 
 export default function Hero() {
   return (
@@ -47,7 +48,7 @@ export default function Hero() {
           
           <Col lg={6} className="text-center">
             <Image 
-              src="/hero-illustration.svg" 
+              src={getAssetPath("/hero-illustration.svg")}
               alt="Financial Technology Illustration" 
               width={600} 
               height={400}

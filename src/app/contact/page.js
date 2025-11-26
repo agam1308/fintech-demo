@@ -3,6 +3,7 @@
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import Image from 'next/image';
 import { useState } from 'react';
+import { getAssetPath } from '@/utils/basePath';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -140,7 +141,7 @@ export default function Contact() {
             <Col lg={5}>
               <div className="mb-4">
                 <Image 
-                  src="/contact-support.jpg" 
+                  src={getAssetPath("/contact-support.jpg")}
                   alt="Customer Support" 
                   width={500} 
                   height={300}
