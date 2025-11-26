@@ -2,21 +2,22 @@
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/basePath';
 
 export default function Features() {
   const features = [
     {
-      icon: '/feature-icon-1.svg',
+      icon: getAssetPath('/feature-icon-1.svg'),
       title: 'Bank-Grade Security',
       description: 'Enterprise-level encryption and multi-factor authentication to protect your financial data 24/7.'
     },
     {
-      icon: '/feature-icon-2.svg',
+      icon: getAssetPath('/feature-icon-2.svg'),
       title: 'Real-Time Analytics',
       description: 'Gain instant insights with powerful dashboards and customizable reports for data-driven decisions.'
     },
     {
-      icon: '/feature-icon-3.svg',
+      icon: getAssetPath('/feature-icon-3.svg'),
       title: 'Global Payments',
       description: 'Process transactions in 150+ countries with support for multiple currencies and payment methods.'
     }
